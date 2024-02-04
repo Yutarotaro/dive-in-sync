@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+/* App.css */
+.video-upload-container {
+  display: flex;
+  justify-content: space-around; /* コンテンツを均等に配置 */
+  padding: 20px;
+}
+
+video {
+  width: 100%; /* 動画をコンテナに合わせて幅を調整 */
+  max-width: 500px; /* 最大幅を設定 */
+  margin-top: 10px; /* マージンで余白を設定 */
+}
