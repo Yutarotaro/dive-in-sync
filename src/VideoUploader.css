@@ -1,0 +1,17 @@
+/* VideoUploader.css */
+.video-container {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .video {
+    width: 100%; /* 動画プレイヤーが親コンテナの幅にフィットするようにします */
+    height: auto; /* アスペクト比を保持 */
+  }
+  
+  @media (max-width: 768px) {
+    .video-container {
+      padding: 0 15px;
+    }
+  }
+  

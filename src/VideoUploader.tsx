@@ -1,5 +1,7 @@
 // VideoUploader.tsx
 import React, { useState } from 'react';
+// VideoUploader.tsx の先頭にインポート
+import './VideoUploader.css';
 
 interface VideoUploaderProps {
   label: string;
@@ -19,7 +21,7 @@ const VideoUploader: React.FC<VideoUploaderProps> = ({ label }) => {
   };
 
   return (
-    <div className="mb-3">
+    <div className="video-container mb-3">
       <label htmlFor="file-upload" className="form-label">{label}</label>
       <input className="form-control" type="file" id="file-upload" accept="video/mp4" onChange={handleFileChange} />
       {videoSrc && <video className="mt-3" src={videoSrc} controls style={{ width: '100%' }} />}
